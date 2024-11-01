@@ -15,6 +15,20 @@
       body {
         background-color: #e3f2fd;
       }
+      .headers {
+        color: #083763;
+        margin-top: 8px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bolder;
+      }
+      .desc {
+        margin-top: 4px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #555f69;
+      }
     </style>
   </head>
   <body>
@@ -52,13 +66,37 @@
             <li class="nav-item">
               <a class="nav-link active" href="/Pages/Gallery.html">Gallery</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Pages/Accommodations.html"
-                >Accommodations</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Pages/Accommodations.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Pages/Dining.html">Dining</a>
+                Accommodations
+              </a>
+              <ul class="dropdown-menu" style="background-color: #c9d9e7">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/Pages/Rooms/Superior-Room.html"
+                    >Superior Room</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Pages/Rooms/Deluxe-Room.html"
+                    >Deluxe Room</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/Pages/Rooms/Exclusive-Room.html"
+                    >Exclusive Room</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/Pages/Experiences.html">Experiences</a>
@@ -69,110 +107,106 @@
     </nav>
     <!-- =================================== Gallery Contents ======================================== -->
 
-    <ul class="nav nav-underline justify-content-center mb-3">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Photos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#">Videos</a>
-      </li>
-    </ul>
+    <h1 class="headers">PHOTOS</h1>
     <div class="container text-center">
       <div class="row row-cols-3">
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
             src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/eugenia-clara-kdjHwLe-r88-unsplash.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/istockphoto-1487058874-1024x1024.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/scene-with-diverse-young-people-being-digital-nomads-working-remotely-from-dreamy-locations.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/toa-heftiba-bvhEYmFU7ec-unsplash.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/istockphoto-880722946-1024x1024.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-      </div>
-    </div>
 
-    <ul class="nav nav-underline justify-content-center mb-3">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Videos</a>
-      </li>
-    </ul>
-    <div class="container text-center">
-      <div class="row row-cols-3">
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/ha-nguy-n-2GE7YiKb_VU-unsplash.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/istockphoto-1440918716-1024x1024.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/kyle-thacker-c5lF-CCkdHs-unsplash.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/sara-dubler-Koei_7yYtIo-unsplash.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/pexels-pixabay-258154.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
-        <div class="col mb-5">
+        <div class="col mb-3">
           <img
-            src="/Assets/Images/cauayan-island-resort-JNoJ-eisUuY-unsplash.jpg"
+            src="/Assets/Images/huy-nguyen-SrDb_YQhQno-unsplash.jpg"
             alt=""
-            style="height: 200px; width: 200px"
+            style="height: 100%; width: 100%; object-fit: cover"
           />
         </div>
+        <p class="desc card-text text-center">
+          Step into a world where the lush greenery, golden sands, and turquoise
+          waters of the tropics blend seamlessly to create an unforgettable
+          escape. Our gallery captures the essence of our resort's natural
+          beauty and luxurious comforts. Explore images of our spacious suites
+          with oceanfront views, serene infinity pools surrounded by tropical
+          flora, and elegant dining spaces featuring fresh, local cuisine.
+          Whether it's lounging on the beach, enjoying a sunset dinner, or
+          adventuring through the nearby rainforests, each photo reflects
+          moments of relaxation and adventure waiting just for you. Let these
+          images inspire your next dream getaway.
+        </p>
       </div>
     </div>
 

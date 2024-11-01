@@ -15,6 +15,22 @@
       body {
         background-color: #e3f2fd;
       }
+      .headers {
+        color: #083763;
+        margin-top: 24px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bolder;
+      }
+      /* .form-container {
+        border-radius: 4px;
+        margin: 40px auto;
+        width: 100%;
+       
+        gap: 4px;
+        padding: 40px;
+        padding-bottom: 20px;
+      } */
     </style>
   </head>
   <body>
@@ -52,10 +68,25 @@
             <li class="nav-item">
               <a class="nav-link" href="/Pages/Gallery.html">Gallery</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Pages/Accommodations.html"
-                >Accommodations</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Pages/Accommodations.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                Accommodations
+              </a>
+              <ul class="dropdown-menu" style="background-color: #c9d9e7">
+                <li><a class="dropdown-item" href="#">Superior Room</a></li>
+                <li><a class="dropdown-item" href="#">Deluxe Room</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Exclusive Room</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Premium Room</a></li>
+                <li><a class="dropdown-item" href="#">Suites</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/Pages/Dining.html">Dining</a>
@@ -68,6 +99,144 @@
       </div>
     </nav>
 
+    <h1 class="headers">CONTACT US</h1>
+    <!-- ========================= Contact Form ========================= -->
+
+    <form class="row g-3 m-5">
+      <div class="row">
+        <div class="col-md-4 w-25">
+          <label for="inputTitle" class="form-label" style="font-weight: bold"
+            >TITLE</label
+          >
+          <select
+            id="inputTitlr"
+            class="form-select"
+            style="border-radius: 0; border: 2px solid black"
+          >
+            <option selected>MR.</option>
+            <option>MRS.</option>
+            <option>MISS.</option>
+            <option>DR.</option>
+            <option>REV.</option>
+          </select>
+        </div>
+        <div class="col-md-6 w-25">
+          <label
+            for="inputFirstName"
+            class="form-label"
+            style="font-weight: bold"
+            >FIRST NAME</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputFirstName"
+            style="border-radius: 0; border: 2px solid black"
+          />
+        </div>
+        <div class="col-md-6 w-25">
+          <label
+            for="inputLastName"
+            class="form-label"
+            style="font-weight: bold"
+            >LAST NAME</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputLastName"
+            style="border-radius: 0; border: 2px solid black"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 w-25">
+          <label for="inputPhone" class="form-label" style="font-weight: bold"
+            >PHONE</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhone"
+            style="border-radius: 0; border: 2px solid black"
+          />
+        </div>
+        <div class="col-12 w-25">
+          <label for="inputEmail" class="form-label" style="font-weight: bold"
+            >EMAIL</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail"
+            style="border-radius: 0; border: 2px solid black"
+          />
+        </div>
+        <div class="col-md-4 w-25">
+          <label for="inputTitle" class="form-label" style="font-weight: bold"
+            >COUNTRY</label
+          >
+          <select
+            id="inputTitlr"
+            class="form-select"
+            style="border-radius: 0; border: 2px solid black"
+          >
+            <option selected>Sri Lanka</option>
+            <option>USA</option>
+            <option>India</option>
+            <option>UAE</option>
+            <option>Germany</option>
+            <option>Egypt</option>
+            <option>Japan</option>
+            <option>China</option>
+            <option>Italy</option>
+            <option>Canada</option>
+            <option>Alaska</option>
+            <option>Africa</option>
+            <option>Pakistan</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9">
+          <label for="inputSubject" class="form-label" style="font-weight: bold"
+            >SUBJECT</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputSubject"
+            style="border-radius: 0; border: 2px solid black"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="mb-3">
+          <label
+            for="exampleFormControlTextarea1"
+            class="form-label"
+            style="font-weight: bold"
+            >MESSAGE</label
+          >
+          <textarea
+            class="form-control w-75"
+            id="exampleFormControlTextarea1"
+            rows="4"
+            style="border-radius: 0; border: 2px solid black"
+          ></textarea>
+        </div>
+      </div>
+      <div class="col-12">
+        <button
+          type="submit"
+          class="btn btn-outline-primary w-25"
+          style="border-radius: 0; border: 2px solid black; color: black"
+        >
+          SUBMIT
+        </button>
+      </div>
+    </form>
     <!-- ======================= Footer ===================== -->
 
     <footer class="card-footer" style="height: 50px">

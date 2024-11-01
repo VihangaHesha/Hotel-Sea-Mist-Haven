@@ -14,6 +14,28 @@
       body {
         margin: 0;
         background-color: #e3f2fd;
+        overflow-x: hidden;
+      }
+      .headers {
+        color: #083763;
+        margin-top: 8px;
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: bolder;
+      }
+      .sub-headers {
+        color: #3b73a7;
+        margin-top: 8px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bolder;
+      }
+      .desc {
+        margin-top: 4px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #555f69;
       }
     </style>
     <title>Hotel Sea Mist Haven</title>
@@ -21,7 +43,7 @@
   <body>
     <!-- ======================== Navbar ============================= -->
     <nav class="navbar navbar-expand-lg p-0" style="background-color: #acd0f2">
-      <div class="container-fluid p-2">
+      <div class="container-fluid">
         <a class="navbar-brand" href="#"
           ><img
             src="/Assets/Icon/Sea Mist Haven logo (2).png"
@@ -56,13 +78,37 @@
             <li class="nav-item">
               <a class="nav-link" href="/Pages/Gallery.html">Gallery</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Pages/Accommodations.html"
-                >Accommodations</a
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/Pages/Accommodations.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Pages/Dining.html">Dining</a>
+                Accommodations
+              </a>
+              <ul class="dropdown-menu" style="background-color: #c9d9e7">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/Pages/Rooms/Superior-Room.html"
+                    >Superior Room</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/Pages/Rooms/Deluxe-Room.html"
+                    >Deluxe Room</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/Pages/Rooms/Exclusive-Room.html"
+                    >Exclusive Room</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/Pages/Experiences.html">Experiences</a>
@@ -96,7 +142,7 @@
           aria-label="Slide 3"
         ></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner mt-1" style="width: 98%; margin: auto">
         <div class="carousel-item active">
           <img
             src="/Assets/Images/sara-dubler-Koei_7yYtIo-unsplash.jpg"
@@ -158,16 +204,7 @@
       </button>
     </div>
     <!-- ==================================== Cards ======================================== -->
-    <!-- <p class="card-text">
-              Nestled in the heart of paradise, Sea Mist Haven is conveniently
-              located for both leisure and adventure. Whether you're arriving by
-              air, land, or sea, reaching our tropical oasis is simple. Our
-              stunning beachfront resort is set just a short distance from the
-              main attractions, offering breathtaking views and easy access to
-              the best of the region.
-            </p>
-            -->
-    <div class="card mb-1 mt-1 border-0">
+    <div class="card mb-1 mt-1 border-0 h-50" style="width: 98%; margin: auto">
       <img
         src="/Assets/Images/pexels-pixabay-258154.jpg"
         class="card-img-top"
@@ -175,30 +212,36 @@
         style="height: 500px; object-fit: cover"
       />
       <div class="card-body" style="background-color: #e3f2fd">
-        <h5 class="card-title text-center">We Hotel Sea Mist Haven</h5>
-        <p class="card-text text-center">
-          Welcome you to, where luxury meets the serenity of nature. Nestled in
-          a tropical paradise with breathtaking ocean views, our hotel offers a
-          unique escape for those seeking tranquility, elegance, and
-          unforgettable experiences
+        <h1 class="card-title text-center sub-headers">
+          We Hotel Sea Mist Haven
+        </h1>
+        <p class="card-text text-center desc">
+          Welcome to a sanctuary where luxury seamlessly blends with the serene
+          beauty of nature. Imagine yourself nestled in a tropical paradise,
+          surrounded by lush greenery and the gentle hum of the ocean. Our hotel
+          stands as a beacon of elegance, offering breathtaking panoramic views
+          that stretch across sparkling blue waters and golden sands. Here,
+          every corner is thoughtfully designed to inspire relaxation and
+          enchantment, making it the perfect escape for those who crave
+          tranquility and sophistication. Indulge in experiences that linger
+          long after you’ve left, from exquisite dining under starlit skies to
+          rejuvenating spa treatments inspired by the soothing rhythms of the
+          sea. Embrace a world where every moment is crafted to be
+          unforgettable, leaving you with memories that will beckon you to
+          return again and again.
         </p>
       </div>
     </div>
     <div class="card text-center border-0" id="about-us">
-      <div
-        class="card-header"
-        style="
-          font-weight: bold;
-          font-size: 1.2rem;
-          background-color: #acd0f2;
-          border: 0;
-        "
+      <h1
+        class="card-header m-0 headers"
+        style="border: 0; background-color: #e3f2fd"
       >
         About Us
-      </div>
+      </h1>
       <div class="card-body" style="background-color: #e3f2fd">
-        <h5 class="card-title">History</h5>
-        <p class="card-text">
+        <h1 class="card-title sub-headers">History</h1>
+        <p class="card-text desc">
           Sea Mist Haven was founded with a vision of blending luxury with the
           serene beauty of nature, inspired by the unspoiled coastline. The
           hotel's design integrates local culture, sustainability, and
@@ -211,8 +254,8 @@
           experiences. Each milestone reflects a journey rooted in passion,
           patience, and a love for the region's natural beauty.
         </p>
-        <h5 class="card-title">Location</h5>
-        <p class="card-text">
+        <h1 class="card-title sub-headers">Location</h1>
+        <p class="card-text desc">
           Nestled along a breathtaking stretch of coastline, Sea Mist Haven
           boasts unparalleled access to both lush tropical forests and tranquil
           sandy beaches. With a backdrop of vibrant sunsets and crystal-clear
